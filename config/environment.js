@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'wx',
+    podModulePrefix: 'wx/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
