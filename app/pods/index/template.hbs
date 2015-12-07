@@ -9,5 +9,7 @@ Lon: {{model.longitude}}
   {{model.currently.temperature}}
 </h2>
 
+<button {{action 'refresh'}}>Refresh</button>
+Last update: {{model.currently.time}}
 
 {{outlet}}

@@ -5,5 +5,11 @@ export default Ember.Route.extend({
     return Ember.$.getJSON('https://api.forecast.io/forecast/' + params.api_key + '/' + params.lat_lon + '/?callback=?').then(function(data) {
       return data;
     });
+  },
+  actions: {
+    refresh: function() {
+      this.refresh();
+      console.log("Wx data reloaded");
+    }
   }
 });
