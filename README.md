@@ -23,13 +23,13 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit the app at [http://localhost:4200](http://localhost:4200).
-* To get weather info for a certain location, you'll need to include your API key and location in the URL like this:
-
-    http://localhost:4200/<API_KEY>/<LATITUDE>,<LONGITUDE>
-
-    Ex: http://localhost:4200/<API_KEY>/43.0419,-90.1967
-
+* To get weather info for a certain location, you'll need to include your API key and location in the URL as shown below
   * You can find your lat/lon location by going to http://forecast.io
+
+```
+http://localhost:4200/<API_KEY>/<LATITUDE>,<LONGITUDE>
+http://localhost:4200/62b24d25c4f157aa20bce8d87fa841ef/43.0419,-90.1967
+```
 
 ### Running Tests
 
