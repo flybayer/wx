@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+    this.route('index', {path: '/:api_key/:lat_lon'}, function () {});
 });
 
 export default Router;

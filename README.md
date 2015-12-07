@@ -1,7 +1,6 @@
 # Wx
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a simple Ember practice project. I'm pulling data from http://forecast.io
 
 ## Prerequisites
 
@@ -11,11 +10,11 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* A developer API key from https://developer.forecast.io/
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/flybayer/wx.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -23,11 +22,14 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit the app at [http://localhost:4200](http://localhost:4200).
+* To get weather info for a certain location, you'll need to include your API key and location in the URL like this:
 
-### Code Generators
+    http://localhost:4200/<API_KEY>/<LATITUDE>,<LONGITUDE>
 
-Make use of the many generators for code, try `ember help generate` for more details
+    Ex: http://localhost:4200/<API_KEY>/43.0419,-90.1967
+
+  * You can find your lat/lon location by going to http://forecast.io
 
 ### Running Tests
 
@@ -41,7 +43,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
