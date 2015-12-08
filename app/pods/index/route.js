@@ -11,5 +11,8 @@ export default Ember.Route.extend({
       this.refresh();
       console.log("Wx data reloaded");
     }
+  },
+  renderTemplate() {
+    this.render('deprecated');
   }
 });
