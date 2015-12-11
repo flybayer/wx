@@ -1,15 +1,14 @@
 Lat: {{model.latitude}}
 Lon: {{model.longitude}}
 
-<h4>Currently:</h4>
-<h2>
-  {{model.currently.summary}}
-</h2>
-<h2>
-  {{model.currently.temperature}}
-</h2>
+<h4>
+  Right now:
+</h4>
+<h1>
+  {{roundTemp}} & {{model.currently.summary}}
+</h1>
 
-<button {{action 'refreshForecast'}}>Refresh</button>
+<button {{action 'refreshForecast'}} class="button">Refresh</button>
 Last update: {{model.currently.time}}
 
 {{yield}}
